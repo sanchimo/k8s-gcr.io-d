@@ -1,0 +1,2 @@
+FROM  docker.ip/rook/ceph:v1.5.3
+MAINTAINER mojl 
