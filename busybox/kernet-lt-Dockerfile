@@ -1,0 +1,39 @@
+From docker.io/busybox:1.33.0
+RUN   
+wget https://elrepo.org/linux/kernel/el7/x86_64/RPMS/elrepo-release-7.0-5.el7.elrepo.noarch.rpm \ 
+ https://elrepo.org/linux/kernel/el7/x86_64/RPMS/kernel-lt-5.4.89-1.el7.elrepo.x86_64.rpm \ 
+ https://elrepo.org/linux/kernel/el7/x86_64/RPMS/kernel-lt-5.4.90-1.el7.elrepo.x86_64.rpm \
+ https://elrepo.org/linux/kernel/el7/x86_64/RPMS/kernel-lt-devel-5.4.89-1.el7.elrepo.x86_64.rpm \
+ https://elrepo.org/linux/kernel/el7/x86_64/RPMS/kernel-lt-devel-5.4.90-1.el7.elrepo.x86_64.rpm \
+ https://elrepo.org/linux/kernel/el7/x86_64/RPMS/kernel-lt-doc-5.4.89-1.el7.elrepo.noarch.rpm \
+ https://elrepo.org/linux/kernel/el7/x86_64/RPMS/kernel-lt-doc-5.4.90-1.el7.elrepo.noarch.rpm \
+ https://elrepo.org/linux/kernel/el7/x86_64/RPMS/kernel-lt-headers-5.4.89-1.el7.elrepo.x86_64.rpm	 
+ https://elrepo.org/linux/kernel/el7/x86_64/RPMS/kernel-lt-headers-5.4.90-1.el7.elrepo.x86_64.rpm \	 
+ https://elrepo.org/linux/kernel/el7/x86_64/RPMS/kernel-lt-tools-5.4.89-1.el7.elrepo.x86_64.rpm \	 
+ https://elrepo.org/linux/kernel/el7/x86_64/RPMS/kernel-lt-tools-5.4.90-1.el7.elrepo.x86_64.rpm \	 
+ https://elrepo.org/linux/kernel/el7/x86_64/RPMS/kernel-lt-tools-libs-5.4.89-1.el7.elrepo.x86_64.rpm \
+ https://elrepo.org/linux/kernel/el7/x86_64/RPMS/kernel-lt-tools-libs-5.4.90-1.el7.elrepo.x86_64.rpm \	
+ https://elrepo.org/linux/kernel/el7/x86_64/RPMS/kernel-lt-tools-libs-devel-5.4.89-1.el7.elrepo.x86_64.rpm \
+ https://elrepo.org/linux/kernel/el7/x86_64/RPMS/kernel-lt-tools-libs-devel-5.4.90-1.el7.elrepo.x86_64.rpm \	
+ https://elrepo.org/linux/kernel/el7/x86_64/RPMS/kernel-ml-5.10.7-1.el7.elrepo.x86_64.rpm \	
+ https://elrepo.org/linux/kernel/el7/x86_64/RPMS/kernel-ml-5.10.8-1.el7.elrepo.x86_64.rpm \	
+ https://elrepo.org/linux/kernel/el7/x86_64/RPMS/kernel-ml-devel-5.10.7-1.el7.elrepo.x86_64.rpm \	
+ https://elrepo.org/linux/kernel/el7/x86_64/RPMS/kernel-ml-devel-5.10.8-1.el7.elrepo.x86_64.rpm \
+ https://elrepo.org/linux/kernel/el7/x86_64/RPMS/kernel-ml-doc-5.10.7-1.el7.elrepo.noarch.rpm \	
+ https://elrepo.org/linux/kernel/el7/x86_64/RPMS/kernel-ml-doc-5.10.8-1.el7.elrepo.noarch.rpm \	 
+ https://elrepo.org/linux/kernel/el7/x86_64/RPMS/kernel-ml-headers-5.10.7-1.el7.elrepo.x86_64.rpm \		 
+ https://elrepo.org/linux/kernel/el7/x86_64/RPMS/kernel-ml-headers-5.10.8-1.el7.elrepo.x86_64.rpm \		 
+ https://elrepo.org/linux/kernel/el7/x86_64/RPMS/kernel-ml-tools-5.10.7-1.el7.elrepo.x86_64.rpm \		 
+ https://elrepo.org/linux/kernel/el7/x86_64/RPMS/kernel-ml-tools-5.10.8-1.el7.elrepo.x86_64.rpm \		 
+ https://elrepo.org/linux/kernel/el7/x86_64/RPMS/kernel-ml-tools-libs-5.10.7-1.el7.elrepo.x86_64.rpm \	 
+ https://elrepo.org/linux/kernel/el7/x86_64/RPMS/kernel-ml-tools-libs-5.10.8-1.el7.elrepo.x86_64.rpm \	 
+ https://elrepo.org/linux/kernel/el7/x86_64/RPMS/kernel-ml-tools-libs-devel-5.10.7-1.el7.elrepo.x86_64.rpm \
+ https://elrepo.org/linux/kernel/el7/x86_64/RPMS/kernel-ml-tools-libs-devel-5.10.8-1.el7.elrepo.x86_64.rpm \
+ https://elrepo.org/linux/kernel/el7/x86_64/RPMS/perf-5.4.89-1.el7.elrepo.x86_64.rpm \ 
+ https://elrepo.org/linux/kernel/el7/x86_64/RPMS/perf-5.4.90-1.el7.elrepo.x86_64.rpm \ 
+ https://elrepo.org/linux/kernel/el7/x86_64/RPMS/perf-5.10.7-1.el7.elrepo.x86_64.rpm \ 
+ https://elrepo.org/linux/kernel/el7/x86_64/RPMS/perf-5.10.8-1.el7.elrepo.x86_64.rpm \ 
+ https://elrepo.org/linux/kernel/el7/x86_64/RPMS/python-perf-5.4.89-1.el7.elrepo.x86_64.rpm \	 
+ https://elrepo.org/linux/kernel/el7/x86_64/RPMS/python-perf-5.4.90-1.el7.elrepo.x86_64.rpm \	 
+ https://elrepo.org/linux/kernel/el7/x86_64/RPMS/python-perf-5.10.7-1.el7.elrepo.x86_64.rpm \	 
+ https://elrepo.org/linux/kernel/el7/x86_64/RPMS/python-perf-5.10.8-1.el7.elrepo.x86_64.rpm
